@@ -2,8 +2,6 @@
     <div class="navbar-inner">
         <a class="brand" ui-sref="demo">Data binding and lists</a>
         <ul class="nav">
-            <li><a ui-sref="demo">Comparision</a>
-            </li>
             <li><a ui-sref="demo.repeatWithoutTrack">ngRepeat</a>
             </li>
             <li><a ui-sref="demo.repeatWithTrack">ngRepeat track by</a>
@@ -13,4 +11,7 @@
         </ul>
     </div>
 </div>
+<button type="button" class="btn btn-success" ng-click="generate()">Generate</button>
+<button type="button" class="btn btn-warning" ng-click="clear()">Clear</button>
+<button type="button" class="btn btn-warning" ng-click="change()">Change Random Row</button>
 <div ui-view></div>

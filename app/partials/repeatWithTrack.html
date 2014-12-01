@@ -1,6 +1,31 @@
 <div class="text-center">
-    <button type="button" class="btn btn-primary" ng-click="generate()">Generate</button>
-    <div class="random" ng-repeat="item in items track by item.key">
-        {{ item.r1 + ' ' + item.r2 + ' ' + item.r3 + ' ' + item.r4 + ' ' + item.r5 + ' ' +item.r6 + ' ' + item.r7 + ' ' + item.r8}}
+    <h1>AngularJs with track by</h1>
+    <div class="random">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        0
+                    </th>
+                    <th>
+                        1
+                    </th>
+                    <th>
+                        2
+                    </th>
+                    <th>
+                        3
+                    </th>
+                    <th>
+                        4
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="row in data track by $index" name="repeat without track">
+                    <td ng-repeat="value in row track by $index">{{ value }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

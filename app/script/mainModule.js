@@ -9,7 +9,8 @@ angular.module('demo1', [
                 url: '',
                 views: {
                     '@': {
-                        templateUrl: 'partials/main.html'
+                        templateUrl: 'partials/main.html',
+                        controller: 'mainCtrl'
                     },
                     '@demo': {
                         templateUrl: 'partials/comparision.html'
