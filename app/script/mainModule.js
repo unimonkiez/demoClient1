@@ -6,7 +6,7 @@ angular.module('demo1', [
     ])
     .config(function($stateProvider, $locationProvider) {
         $stateProvider.state('demo', {
-                url: '',
+                url: '/',
                 views: {
                     '@': {
                         templateUrl: 'partials/main.html',
