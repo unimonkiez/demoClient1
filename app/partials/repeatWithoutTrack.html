@@ -1,31 +1,6 @@
 <div class="text-center">
     <h1>AngularJs repeat</h1>
     <div class="random">
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        0
-                    </th>
-                    <th>
-                        1
-                    </th>
-                    <th>
-                        2
-                    </th>
-                    <th>
-                        3
-                    </th>
-                    <th>
-                        4
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="row in data track by $index" name="repeat without track">
-                    <td ng-repeat="value in row track by $index">{{ value }}</td>
-                </tr>
-            </tbody>
-        </table>
+        <ang-repeat name="repeat without track" ng-data="data"></ang-repeat>
     </div>
 </div>
